@@ -7,7 +7,7 @@ body {
     grid-template-areas: "nav nav nav nav"
                          "section section section section"
                          "footer footer footer footer";
-    grid-template-rows: 90px 700px 90px;                   
+    grid-template-rows: 90px 700px 100px;                   
 }
 
 nav{
@@ -28,7 +28,6 @@ nav img{
 }
 div > img {
     width: 10%;
-    
 }
 
 section{
@@ -38,5 +37,5 @@ section{
 
 footer{
     grid-area: footer;
-    background-color: rgba(100, 2, 100, 0.966)
+    background-color: rgba(61, 0, 61, 0.966)
 }
