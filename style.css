@@ -15,15 +15,20 @@ nav{
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     
-
+} 
+nav div{
+    display: flex;
+    justify-content: space-between;
 }
 
 nav img{
     width: 25%;
-    align-self: flex-start;
+}
+div > img {
+    width: 10%;
+    
 }
 
 section{
