@@ -8,8 +8,10 @@ body {
                          "header header header header"
                          "section section section section"
                          "section2 section2 section2 section2"
+                         "banda banda side side"
+                         "banda banda side side"
                          "footer footer footer footer";
-    grid-template-rows: 100px 60px 700px 780px 250px;                   
+    grid-template-rows: 100px 60px 700px 780px 300px 350px;                   
 }
 
 nav{
@@ -27,8 +29,6 @@ nav div{
     display: flex;
     justify-content: space-between;  
 }
-
-
 nav img{
     width: 26%; 
 }
@@ -75,32 +75,61 @@ section > div > video {
     justify-content: center;
 }
 
-section2 {
+.section2 {
     grid-area: section2; 
     background-color: white;
     background-image: url(imagensAbô/AborigensMG.JPG);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
+    
 
 }
-section2 > div > img {
+.section2 img {
     width: 40px;
     height: 40px;
     margin: 20px;
-    display: flex;
+    justify-content: center;
 }
 
-section2 > div > h1 {
-    color:  rgba(61, 0, 61, 0.966);
+.section2 > h1 {
+    color:  rgb(255, 94, 0);
     text-decoration: none;
     display: flex;
-    align-items: flex-start ;
     justify-content: center;
     font-size: 80pt;
-    font-family: MegaDose;  
+    font-family: MegaDose; 
+    width: 1155px; 
 }
-    
+
+.banda { 
+    grid-area: banda;
+    background-color: black;
+ }
+
+
+ .banda img {
+     width: 100%;
+     height: auto;
+     display: flex;
+     margin: 125px 0px ;
+     
+}
+
+ aside {
+     grid-area: side;
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+ aside > p {
+    color: white;
+    font-family: Arial;
+    font-size: 13pt;
+}
 
 footer{
     grid-area: footer;
@@ -110,13 +139,17 @@ footer{
 
 footer > ul> a{
 text-decoration: none;
-font-family: sans-serif;
+font-family: arial;
 font-size: 13pt;
 color: white;
-text-align: left;
 display: flex;
-padding: 7px;
+justify-content: space-between;
+align-content: center;
+margin: 20px;
+
 }
+
+
 footer> ul >a:hover {
     cursor: pointer;
     text-decoration-line: underline;
