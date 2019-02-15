@@ -10,8 +10,11 @@ body {
                          "section2 section2 section2 section2"
                          "banda banda side side"
                          "banda banda side side"
-                         "footer footer footer footer";
-    grid-template-rows: 100px 60px 700px 780px 300px 350px;                   
+                         "agenda agenda agenda agenda"
+                         "galeria galeria galeria galeria"
+                         "footer footer footer footer"
+                         ;
+    grid-template-rows: 100px 60px 700px 780px 300px 400px 780px 600px 350px;                   
 }
 
 nav{
@@ -93,11 +96,11 @@ section > div > video {
 }
 
 .section2 > h1 {
-    color:  rgb(255, 94, 0);
+    color: orange;
     text-decoration: none;
     display: flex;
     justify-content: center;
-    font-size: 80pt;
+    font-size: 75pt;
     font-family: MegaDose; 
     width: 1155px; 
 }
@@ -131,24 +134,81 @@ section > div > video {
     font-size: 13pt;
 }
 
-footer{
-    grid-area: footer;
-    background-color: rgba(61, 0, 61, 0.966);
+.galeria {
+    grid-area: galeria;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.galeria h1 {
+    color: black;
+    font-family: MegaDose;
+    font-size: 40px;
+    display: flex;
+
+}
+
+.galeria div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.galeria> div> img {
+    width: 450px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    
+}
+.agenda {
+    grid-area: agenda;
+    background-color: black;
     display: flex;
 }
 
+.agenda > h1{
+    text-decoration: none;
+    font-family: MegaDose;
+    font-size: 80px;
+    color: orange;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ .agenda > div >img {
+  width: 150px;
+  height: auto;
+ }
+
+.agenda> h1:hover {
+     cursor: pointer;
+     font-family: 23px;
+     
+ }
+
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+   }
+
 footer > ul> a{
-text-decoration: none;
-font-family: arial;
-font-size: 13pt;
-color: white;
-display: flex;
-justify-content: space-between;
-align-content: center;
-margin: 20px;
-
+    text-decoration: none;
+    font-family: arial;
+    font-size: 13pt;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 20px;
+        
 }
-
 
 footer> ul >a:hover {
     cursor: pointer;
