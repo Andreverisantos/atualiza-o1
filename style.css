@@ -150,20 +150,78 @@ section > div > video {
 
 }
 
-.galeria div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.galeria> div> img {
-    width: 450px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 5px;
+.carousel-wrapper {
+    margin: 10px auto;
+    position: relative;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    }
+    .carousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+    }
+    .carousel-wrapper .photo-credits a {
+    color: #fff;
+    }
+    /** <a href="https://www.jqueryscript.net/tags.php?/Carousel/">Carousel</a> **/
     
-}
+    .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    }
+    .carousel ul {
+    width: 20000em;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    .carousel li {
+    float: left;
+    }
+    /** Carousel Controls **/
+    
+    .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+    }
+    .carousel-control-prev {
+    left: -50px;
+    }
+    .carousel-control-next {
+    right: -50px;
+
+    }
+    .carousel-control-prev:hover span, .carousel-control-next:hover span {
+    display: block;
+    }
+
 .agenda {
     grid-area: agenda;
     background-color: black;
@@ -180,15 +238,10 @@ section > div > video {
     justify-content: center;
     flex-direction: column;
  }
- .agenda > div >img {
-  width: 150px;
-  height: auto;
- }
 
 .agenda> h1:hover {
      cursor: pointer;
      font-family: 23px;
-     
  }
 
 
@@ -201,35 +254,33 @@ footer{
 footer > div {
     display: flex;
     align-items: flex-end;
+}
 
-
+footer > ul> input{
+    display: flex;
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color:orange;
+    text-decoration-color: black;
+   
+}
+button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: orange;
 }
    
-footer >div> img{
+footer > div > img{
     width: 32px;
     height: 32px;
     display: flex;
     margin: 50px;
-
 }
 
-footer > ul> a{
-    text-decoration: none;
-    font-family: arial;
-    font-size: 13pt;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 15%;
-    align-content: center;
-    margin: 20px;  
-}
-
-footer> ul >a:hover {
+footer>a:hover {
     cursor: pointer;
-    text-decoration-line: underline;
-    color: orange;
-    font-size: 13pt;
 }
 
 @font-face  {

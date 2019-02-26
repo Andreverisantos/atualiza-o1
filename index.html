@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="dist/jquery.jcarousel.min.js"></script>
     <title>Abôrigens</title>
 </head>
 <body>
@@ -50,25 +52,29 @@
       <h1>
          Aguarde agenda da tour Protegendo as Raízes 
       </h1> 
-      <div><img src="imagensAbô/spotifyBrancoAuto.png" alt=""></div>
    </section>
    <section class="galeria">
     <h1> Galeria </h1> 
-   <div>
-      <img src="imagensAbô/Abôrigens Festival Percurso.JPG " alt=" " > 
-      <img src="imagensAbô/Abôrigens e Rincon.JPG " alt=" " > 
-      <!-- <img src="imagensAbô/Abôrigens Festival Percurso.JPG " alt=" " > 
-      <img src="imagensAbô/Abôrigens e Rincon.JPG " alt=" " >  -->
-    </div>
+    <div class="carousel-wrapper">
+      <div data-jcarousel="true" data-wrap="circular" class="carousel">
+      <ul>
+      <li><img src="imagensAbô/AborigensMG.JPG" width="600" height="400" alt=""></li>
+      <li><img src="imagensAbô/Abôrigens Festival Percurso.JPG" width="600" height="400" alt=""></li>
+      <li><img src="imagensAbô/Abôrigens e Rincon.JPG" width="600" height="400" alt=""></li>
+      <li><img src="imagensAbô/youtube-branco.png" width="600" height="400" alt=""></li>
+      <li><img src="imagensAbô/AborigensMG.JPG" width="600" height="400" alt=""></li>
+      <li><img src="imagensAbô/Abôrigens e Rincon.JPG" width="600" height="400" alt=""></li>
+      </ul>
+      </div>
+      <a data-jcarousel-control="true" data-target="-=1" href="#" class="carousel-control-prev">&lsaquo;</a> 
+      <a data-jcarousel-control="true" data-target="+=1" href="#" class="carousel-control-next">&rsaquo;</a> 
+      </div>
    </section>
    <footer>
-    <ul>
-    <a href="">Ep Protejendo as orígens</a> 
-    <a href="">A Banda</a>
-    <a href="">Agenda</a>
-    <a href="">Galeria</a>
-    <a href="">Contato para show</a> 
-    </ul>
+      <ul>
+    <input type="email" name="Cadastre seu email" id="">
+    <button> enviar </button>
+     </ul>
     <div>
        <img src="imagensAbô/apple branco.png" alt="">
        <img src="imagensAbô/spotify-branco.png" alt="">
